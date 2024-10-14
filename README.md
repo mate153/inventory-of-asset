@@ -37,7 +37,7 @@ To run this project, you will need the following:
 1. **Install Honeywell SDK**:
    Download and install the Honeywell SDK for your development environment.
    
-   - Visit the [Honeywell Developer](https://developer.honeywell.com/) page and register to download the necessary SDK.
+   - Visit the [Honeywell Developer](https://automation.honeywell.com/us/en/software/productivity-solutions/enabling-software/mobility-sdk-android) page and register to download the necessary SDK.
    
 2. **Clone the Project**:
    Clone the project from the GitHub repository
