@@ -8,9 +8,6 @@ This reference project demonstrates how to perform asset inventory using Honeywe
 - [Features](#features)
 - [Required Software](#required-software)
 - [Installation](#installation)
-- [Usage](#usage)
-- [Project Structure](#project-structure)
-- [License](#license)
 
 ## Project Overview
 
