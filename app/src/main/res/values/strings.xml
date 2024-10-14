@@ -1,0 +1,121 @@
+<resources>
+
+    <!-- APPLICATION -->
+    <string name="app_name">Inventory of Assets</string>
+
+    <!-- NOTIFIES -->
+    <string name="notify_login_success">Log-in success</string>
+    <string name="notify_login_failed">Log-in failed</string>
+    <string name="notify_need_room_number">You Need To Scan Room Barcode</string>
+    <string name="file_open_success">File opened successfully</string>
+    <string name="file_open_error">Only CSV file accepted</string>
+    <string name="item_checked_success">Item checked success</string>
+    <string name="item_already_checked">Item already checked</string>
+    <string name="item_not_found">Item not found</string>
+    <string name="notify_file_not_found">File not found</string>
+    <string name="notify_file_read_error">File read error</string>
+    <string name="notify_logout_success">Log-out success</string>
+    <string name="notify_asset_update_success">Asset updated successfully!</string>
+    <string name="notify_asset_update_fail">Error occurred! Updating failed!</string>
+    <string name="notify_details_asset_name">Asset name is required !</string>
+    <string name="notify_file_created_success">File created successfully</string>
+    <string name="notify_file_creation_error">File created unsuccessfully</string>
+    <string name="notify_barcode_reader_not_initialized">Barcode Reader not initialized</string>
+
+    <!-- DIALOGS -->
+    <string name="dialog_yes_btn">Yes</string>
+    <string name="dialog_no_btn">No</string>
+    <string name="dialog_new_session_title">Confirmation</string>
+    <string name="dialog_new_session_message">With this action you will lose your last progress.\nDo you want to continue?</string>
+    <string name="dialog_exit_title">Exit confirmation</string>
+    <string name="dialog_exit_message">Are you sure you want to quit?\nYou can come back at any time and continue the work you started!</string>
+    <string name="dialog_export_title">Export confirmation</string>
+    <string name="dialog_export_message">This action closes the started work and creates the final output file.</string>
+    <string name="dialog_export_text">Work is in progress</string>
+    <string name="dialog_loading_text">Loading</string>
+    <string name="dialog_loading_text2">Loading data</string>
+    <string name="dialog_export_done">Export success !</string>
+    <string name="dialog_room_not_found">Room not found !</string>
+    <string name="dialog_move_title">Asset move</string>
+    <string name="dialog_move_message">Item checked successfully, but it is currently in another room.\nWould you like to move it to this room?</string>
+    <string name="dialog_check_update">Looking for updates&#8230;</string>
+    <string name="dialog_update_available">Update available:&#160;</string>
+    <string name="dialog_update_yesBtn">Update</string>
+    <string name="dialog_update_noBtn">Later</string>
+    <string name="dialog_asset_move_title">Asset move</string>
+    <string name="dialog_asset_move_message">This item is currently in another room. \nWould you like to move it to this room?</string>
+    <string name="dialog_not_in_room">Step inside a room or to the roomless items</string>
+    <string name="dialog_updating">"Download update…"</string>
+
+
+    <!-- BUTTONS -->
+    <string name="details">Details</string>
+    <string name="show_found">Show Found</string>
+    <string name="show_open">Show Open</string>
+    <string name="login_button">Login</string>
+    <string name="logout_btn">Logout</string>
+    <string name="new_button">New</string>
+    <string name="back_button">Back</string>
+    <string name="alone_items_btn">Room-less Items</string>
+    <string name="export_csv_btn">Export</string>
+    <string name="exit">Exit</string>
+    <string name="continue_btn">Continue</string>
+    <string name="new_session_btn">New Session</string>
+    <string name="asset_modify_btn">Modify</string>
+    <string name="asset_create_btn">Create</string>
+    <string name="btn_ok">OK</string>
+    <string name="btn_build_inventory_newroom">New Room</string>>
+    <string name="btn_resume_inventory">Resume Inventory</string>
+    <string name="btn_new_inventory">New Inventory</string>
+    <string name="btn_regular_inventory">Regular Inventory</string>
+    <string name="btn_build_inventory">Build Inventory</string>
+
+    <!-- LABELS -->
+    <string name="room_number">Room Number</string>
+    <string name="inventory_number">Inventory Number</string>
+    <string name="login_username">Username</string>
+    <string name="login_password">Password</string>
+    <string name="room_number_error_text">Barcode not found</string>
+    <string name="wrong_room_number_barcode">Invalid room number</string>
+    <string name="session_not_found">No session started</string>
+    <string name="session_continue">Continue session.\n Last update:&#160;</string>
+    <string name="asset_asset_number">Asset Number</string>
+    <string name="asset_asset">Asset</string>
+    <string name="asset_asset_name">Asset Name</string>
+    <string name="asset_inventory_number">Inventory Number</string>
+    <string name="asset_company_code">Company Code</string>
+    <string name="asset_cost_center">Cost Center</string>
+    <string name="asset_new_cost_center">New Cost Center</string>
+    <string name="asset_room">Room</string>
+    <string name="asset_new_room">New Room</string>
+    <string name="asset_user">User</string>
+    <string name="asset_date">Date</string>
+    <string name="new_session_desc">With this action, you lose ongoing operation.</string>
+    <string name="management_all_rooms">All Rooms</string>
+    <string name="management_started_rooms">Started Rooms</string>
+    <string name="management_finished_rooms">Finished Rooms</string>
+    <string name="management_all_items">All Items</string>
+    <string name="management_checked_items">Checked Items</string>
+    <string name="management_room">Room Management</string>
+    <string name="management_item">Item Management</string>
+    <string name="version">Version</string>
+    <string name="inventory_dialog_attention">ATTENTION!</string>
+    <string name="inventory_dialog_attention_desc">You have an ongoing inventory process. Starting a new one will discard current data.</string>
+    <string name="inventory_dialog_resume_desc">Continue session.\n Last update:&#160;</string>
+    <string name="inventory_dialog_new_desc">With this action you lose the ongoing operation.</string>
+    <string name="menu_choose_inventory">Choose your inventory method</string>
+    <string name="menu_regular_inventory_desc">Select this option if you have pre-existing inventory list to import.</string>
+    <string name="menu_build_inventory_desc">Building description &#8230;</string>
+
+    <!-- INFO LOGS -->
+    <string name="test_string">Failed to apply properties</string>
+    <string name="test_string2">Use system scanning setting</string>
+    <string name="test_string3">Fail import scanner settings</string>
+    <string name="test_string4">Scanner is not claimed</string>
+    <string name="test_string5">Scanner unavailable</string>
+
+    <!-- OTHERS -->
+    <string name="successGif"> </string>
+    <string name="text_holder"> </string>
+
+</resources>

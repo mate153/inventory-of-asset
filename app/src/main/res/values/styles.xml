@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="AppTheme" parent="Theme.MaterialComponents.Light.NoActionBar">
+
+    </style>
+    <style name="PrimarySecondaryTextViewStyle" parent="Widget.AppCompat.TextView">
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:textAllCaps">true</item><!-- Your default text color -->
+    </style>
+    <style name="TertiaryTextViewStyle" parent="Widget.AppCompat.TextView">
+        <item name="android:textColor">@color/simple_select_primary</item>
+        <item name="android:textAllCaps">true</item><!-- Your default text color -->
+    </style>
+</resources>

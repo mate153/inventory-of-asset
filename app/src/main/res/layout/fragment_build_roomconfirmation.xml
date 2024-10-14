@@ -1,0 +1,555 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    tools:context=".fragments.RoomConfirmationFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="0dp">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerView"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/border_background"
+            android:color="#20FFFF00"
+            android:padding="4dp"
+            android:scrollbarSize="8dp"
+            android:scrollbarThumbVertical="@android:color/darker_gray"
+            android:scrollbars="vertical"
+            android:visibility="gone"
+            app:layout_constraintBottom_toTopOf="@+id/roomConfirmationDetailsButton"
+            app:layout_constraintEnd_toStartOf="@+id/guideline7"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="@+id/guideline6"
+            app:layout_constraintTop_toBottomOf="@+id/textViewInventoryNumber"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <EditText
+            android:id="@+id/textViewScanData"
+            android:layout_width="0dp"
+            android:layout_height="40sp"
+            android:background="@drawable/input2_dialog_design"
+            android:gravity="center"
+            android:paddingStart="8dp"
+            android:paddingEnd="8dp"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:inputType="text"
+            app:layout_constraintEnd_toStartOf="@+id/guideline17"
+            app:layout_constraintStart_toStartOf="@+id/guideline6"
+            app:layout_constraintTop_toBottomOf="@+id/textViewRoomIdTitle"
+            android:autofillHints=""
+            tools:ignore="LabelFor" />
+
+        <TextView
+            android:id="@+id/textViewRoomIdTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/montserrat"
+            android:text="@string/room_number"
+            android:textColor="#666666"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="@+id/guideline6"
+            app:layout_constraintTop_toTopOf="@+id/guideline8" />
+
+        <TextView
+            android:id="@+id/textViewInventoryNumberTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:fontFamily="@font/montserrat"
+            android:text="@string/inventory_number"
+            android:textColor="#666666"
+            android:textSize="18sp"
+            android:visibility="gone"
+            app:layout_constraintStart_toStartOf="@+id/guideline6"
+            app:layout_constraintTop_toBottomOf="@+id/textViewScanData" />
+
+        <TextView
+            android:id="@+id/textViewInventoryNumber"
+            android:layout_width="0dp"
+            android:layout_height="40sp"
+            android:background="@drawable/input2_dialog_design"
+            android:gravity="center"
+            android:paddingStart="8dp"
+            android:paddingEnd="8dp"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:visibility="gone"
+            app:layout_constraintEnd_toStartOf="@+id/guideline7"
+            app:layout_constraintStart_toStartOf="@+id/guideline6"
+            app:layout_constraintTop_toBottomOf="@+id/textViewInventoryNumberTitle" />
+
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.05" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.95" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.02" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.98" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.7" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline13"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.33" />
+
+        <Button
+            android:id="@+id/roomConfirmationAddNewRoomButton"
+            android:layout_width="0dp"
+            android:layout_height="50sp"
+            android:layout_marginBottom="12dp"
+            android:background="@drawable/button_design"
+            android:fontFamily="@font/montserrat_medium"
+            android:text="@string/btn_build_inventory_newroom"
+            android:textSize="20sp"
+            android:visibility="visible"
+            style="@style/PrimarySecondaryTextViewStyle"
+            app:layout_constraintBottom_toTopOf="@+id/roomConfirmationAloneItemsButton"
+            app:layout_constraintEnd_toStartOf="@+id/guideline7"
+            app:layout_constraintStart_toStartOf="@+id/guideline6" />
+
+        <Button
+            android:id="@+id/roomConfirmationAloneItemsButton"
+            android:layout_width="0dp"
+            android:layout_height="50sp"
+            android:layout_marginBottom="12dp"
+            android:background="@drawable/button_light_design"
+            android:fontFamily="@font/montserrat_medium"
+            android:text="@string/alone_items_btn"
+            android:textSize="20sp"
+            android:visibility="visible"
+            style="@style/PrimarySecondaryTextViewStyle"
+            app:layout_constraintBottom_toTopOf="@+id/roomConfirmationExitButton"
+            app:layout_constraintEnd_toStartOf="@+id/guideline7"
+            app:layout_constraintStart_toStartOf="@+id/guideline6" />
+
+
+        <Button
+            android:id="@+id/roomConfirmationExitButton"
+            android:layout_width="0dp"
+            android:layout_height="50sp"
+            android:background="@drawable/button_white_design"
+            android:fontFamily="@font/montserrat_medium"
+            android:text="@string/exit"
+            android:textSize="20sp"
+            android:visibility="visible"
+            style="@style/TertiaryTextViewStyle"
+            app:layout_constraintBottom_toTopOf="@+id/guideline9"
+            app:layout_constraintEnd_toStartOf="@+id/guideline7"
+            app:layout_constraintStart_toStartOf="@+id/guideline6" />
+
+        <Button
+            android:id="@+id/roomConfirmationBackButton"
+            android:layout_width="0dp"
+            android:layout_height="50sp"
+            android:layout_marginEnd="8dp"
+            android:background="@drawable/button_white_design"
+            android:fontFamily="@font/montserrat_medium"
+            android:text="@string/back_button"
+            android:textSize="20sp"
+            android:visibility="gone"
+            app:layout_constraintBottom_toTopOf="@+id/guideline9"
+            app:layout_constraintEnd_toStartOf="@+id/guideline13"
+            app:layout_constraintStart_toStartOf="@+id/guideline6" />
+
+        <Button
+            android:id="@+id/roomConfirmationShowOpenButton"
+            android:layout_width="0dp"
+            android:layout_height="50sp"
+            android:layout_marginStart="8dp"
+            android:background="@drawable/button_light_design"
+            android:fontFamily="@font/montserrat_medium"
+            android:text="@string/show_open"
+            android:textSize="20sp"
+            android:visibility="gone"
+            app:layout_constraintBottom_toTopOf="@+id/guideline9"
+            app:layout_constraintEnd_toStartOf="@+id/guideline7"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/guideline13" />
+
+        <Button
+            android:id="@+id/roomConfirmationNewButton"
+            android:layout_width="0dp"
+            android:layout_height="50sp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/button_light_design"
+            android:fontFamily="@font/montserrat_medium"
+            android:text="@string/new_button"
+            android:textSize="20sp"
+            android:visibility="gone"
+            app:layout_constraintBottom_toTopOf="@+id/roomConfirmationBackButton"
+            app:layout_constraintEnd_toStartOf="@+id/guideline13"
+            app:layout_constraintStart_toStartOf="@+id/guideline6" />
+
+        <Button
+            android:id="@+id/roomConfirmationShowFoundButton"
+            android:layout_width="0dp"
+            android:layout_height="50sp"
+            android:layout_marginStart="8dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/button_light_design"
+            android:fontFamily="@font/montserrat_medium"
+            android:text="@string/show_found"
+            android:textSize="20sp"
+            android:visibility="gone"
+            app:layout_constraintBottom_toTopOf="@+id/roomConfirmationShowOpenButton"
+            app:layout_constraintEnd_toStartOf="@+id/guideline7"
+            app:layout_constraintStart_toStartOf="@+id/guideline13" />
+
+        <Button
+            android:id="@+id/roomConfirmationDetailsButton"
+            android:layout_width="0dp"
+            android:layout_height="50sp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/button_light_design"
+            android:fontFamily="@font/montserrat_medium"
+            android:text="@string/details"
+            android:textSize="20sp"
+            android:visibility="gone"
+            app:layout_constraintBottom_toTopOf="@+id/roomConfirmationShowFoundButton"
+            app:layout_constraintEnd_toStartOf="@+id/guideline7"
+            app:layout_constraintStart_toStartOf="@+id/guideline6" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.22" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/roomConfirmationManagementContainer"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/rounded_corner"
+            android:padding="10dp"
+            android:visibility="visible"
+            app:layout_constraintBottom_toTopOf="@+id/roomConfirmationAddNewRoomButton"
+            app:layout_constraintEnd_toStartOf="@+id/guideline7"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/guideline6"
+            app:layout_constraintTop_toBottomOf="@+id/textViewInventoryNumber"
+            app:layout_constraintVertical_bias="0.0">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/constraintLayout2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="24dp"
+                android:layout_marginEnd="16dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <TextView
+                    android:id="@+id/roomConfirmationManagementRoomTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/montserrat_medium"
+                    android:text="@string/management_room"
+                    android:textColor="#454343"
+                    android:textSize="22sp"
+                    android:textStyle="normal|bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/roomConfrimationAvailableRoomsText"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:fontFamily="@font/montserrat"
+                    android:text="@string/management_all_rooms"
+                    android:textColor="#454343"
+                    android:textSize="18sp"
+                    android:textStyle=""
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/roomConfirmationManagementRoomTextView" />
+
+                <TextView
+                    android:id="@+id/roomConfirmationVisitedRoomsText"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:fontFamily="@font/montserrat"
+                    android:text="@string/management_started_rooms"
+                    android:textColor="#454343"
+                    android:textSize="18sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/roomConfrimationAvailableRoomsText" />
+
+                <TextView
+                    android:id="@+id/roomConfirmationFinishedRoomsText"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:fontFamily="@font/montserrat"
+                    android:text="@string/management_finished_rooms"
+                    android:textColor="#454343"
+                    android:textSize="18sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/roomConfirmationVisitedRoomsText" />
+
+                <TextView
+                    android:id="@+id/roomConfirmationVisitedRoomsValue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/montserrat"
+                    android:text="@string/text_holder"
+                    android:textColor="#454343"
+                    android:textSize="18sp"
+                    app:layout_constraintBottom_toBottomOf="@+id/roomConfirmationVisitedRoomsText"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="1.0"
+                    app:layout_constraintStart_toEndOf="@+id/roomConfirmationVisitedRoomsText"
+                    app:layout_constraintTop_toTopOf="@+id/roomConfirmationVisitedRoomsText"
+                    app:layout_constraintVertical_bias="0.0" />
+
+                <TextView
+                    android:id="@+id/roomConfirmationFinishedRoomsValue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/montserrat"
+                    android:text="@string/text_holder"
+                    android:textColor="#454343"
+                    android:textSize="18sp"
+                    app:layout_constraintBottom_toBottomOf="@+id/roomConfirmationFinishedRoomsText"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="1.0"
+                    app:layout_constraintStart_toEndOf="@+id/roomConfirmationFinishedRoomsText"
+                    app:layout_constraintTop_toTopOf="@+id/roomConfirmationFinishedRoomsText"
+                    app:layout_constraintVertical_bias="0.0" />
+
+                <TextView
+                    android:id="@+id/roomConfirmationAvailableRoomsValue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:fontFamily="@font/montserrat"
+                    android:text="@string/text_holder"
+                    android:textColor="#454343"
+                    android:textSize="18sp"
+                    app:layout_constraintBottom_toBottomOf="@+id/roomConfrimationAvailableRoomsText"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="1.0"
+                    app:layout_constraintStart_toEndOf="@+id/roomConfrimationAvailableRoomsText"
+                    app:layout_constraintTop_toTopOf="@+id/roomConfrimationAvailableRoomsText"
+                    app:layout_constraintVertical_bias="0.0" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginBottom="24dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/constraintLayout2"
+                app:layout_constraintVertical_bias="1.0">
+
+                <TextView
+                    android:id="@+id/roomConfirmationManagementItemTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/montserrat_medium"
+                    android:text="@string/management_item"
+                    android:textColor="#454343"
+                    android:textSize="22sp"
+                    android:textStyle="normal|bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.502"
+                    app:layout_constraintStart_toStartOf="@+id/guideline16"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/roomConfirmationAllItemsText"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:fontFamily="@font/montserrat"
+                    android:text="@string/management_all_items"
+                    android:textColor="#454343"
+                    android:textSize="18sp"
+                    app:layout_constraintStart_toStartOf="@+id/guideline16"
+                    app:layout_constraintTop_toBottomOf="@+id/roomConfirmationManagementItemTextView" />
+
+                <TextView
+                    android:id="@+id/roomConfirmationCheckedItemsText"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:fontFamily="@font/montserrat"
+                    android:text="@string/management_checked_items"
+                    android:textColor="#454343"
+                    android:textSize="18sp"
+                    app:layout_constraintStart_toStartOf="@+id/guideline16"
+                    app:layout_constraintTop_toBottomOf="@+id/roomConfirmationAllItemsText" />
+
+                <TextView
+                    android:id="@+id/roomConfirmationAllItemsValue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/montserrat"
+                    android:text="@string/text_holder"
+                    android:textColor="#454343"
+                    android:textSize="18sp"
+                    app:layout_constraintBottom_toBottomOf="@+id/roomConfirmationAllItemsText"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="1.0"
+                    app:layout_constraintStart_toEndOf="@+id/roomConfirmationAllItemsText"
+                    app:layout_constraintTop_toTopOf="@+id/roomConfirmationAllItemsText"
+                    app:layout_constraintVertical_bias="0.0" />
+
+                <TextView
+                    android:id="@+id/roomConfirmationCheckedItemsValue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/montserrat"
+                    android:text="@string/text_holder"
+                    android:textColor="#454343"
+                    android:textSize="18sp"
+                    app:layout_constraintBottom_toBottomOf="@+id/roomConfirmationCheckedItemsText"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="1.0"
+                    app:layout_constraintStart_toEndOf="@+id/roomConfirmationCheckedItemsText"
+                    app:layout_constraintTop_toTopOf="@+id/roomConfirmationCheckedItemsText"
+                    app:layout_constraintVertical_bias="1.0" />
+
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/guideline15"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_constraintGuide_percent="0.9" />
+
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/guideline16"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_constraintGuide_begin="0dp" />
+
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/guideline14"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_constraintGuide_begin="20dp" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline17"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.70" />
+
+        <ImageView
+            android:id="@+id/roomConfirmationExportButton"
+            android:layout_width="0dp"
+            android:layout_height="90dp"
+            android:layout_marginStart="8dp"
+            android:src="@drawable/export_btn"
+            app:layout_constraintBottom_toTopOf="@+id/textViewInventoryNumber"
+            app:layout_constraintEnd_toStartOf="@+id/guideline7"
+            app:layout_constraintStart_toStartOf="@+id/guideline17"
+            app:layout_constraintTop_toTopOf="@+id/guideline8"
+            android:visibility="gone"
+            android:importantForAccessibility="no" />
+
+        <ImageView
+            android:id="@+id/itemCounter"
+            android:layout_width="0dp"
+            android:layout_height="90dp"
+            android:layout_marginStart="4dp"
+            android:src="@drawable/total___found_1"
+            app:layout_constraintEnd_toStartOf="@+id/guideline7"
+            app:layout_constraintStart_toStartOf="@+id/guideline17"
+            app:layout_constraintTop_toTopOf="@+id/guideline8"
+            android:importantForAccessibility="no" />
+
+        <TextView
+            android:id="@+id/counterTotal"
+            android:layout_width="0dp"
+            android:layout_height="25dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="11dp"
+            android:layout_marginEnd="12dp"
+            android:fontFamily="@font/montserrat"
+            android:letterSpacing="0.05"
+            android:text="@string/text_holder"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toStartOf="@+id/guideline7"
+            app:layout_constraintStart_toStartOf="@+id/guideline17"
+            app:layout_constraintTop_toTopOf="@+id/guideline8" />
+
+        <TextView
+            android:id="@+id/counterToFind"
+            android:layout_width="0dp"
+            android:layout_height="25dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="12dp"
+            android:layout_marginBottom="6dp"
+            android:fontFamily="@font/montserrat"
+            android:letterSpacing="0.05"
+            android:lineSpacingExtra="8sp"
+            android:text="@string/text_holder"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toBottomOf="@+id/itemCounter"
+            app:layout_constraintEnd_toStartOf="@+id/guideline7"
+            app:layout_constraintStart_toStartOf="@+id/guideline17" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

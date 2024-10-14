@@ -1,0 +1,120 @@
+<resources>
+
+    <!-- APPLICATION -->
+    <string name="app_name">Inventory of Assets</string>
+
+    <!-- NOTIFIES -->
+    <string name="notify_login_success">Anmelde-Erfolg</string>
+    <string name="notify_login_failed">Anmelde fehlgeschlagen</string>
+    <string name="notify_need_room_number">Sie müssen den Zimmer-Barcode scannen</string>
+    <string name="file_open_success">Datei erfolgreich geöffnet</string>
+    <string name="file_open_error">Nur CSV-Datei akzeptiert</string>
+    <string name="item_checked_success">Artikel erfolgreich überprüft</string>
+    <string name="item_already_checked">Artikel schon geprüft</string>
+    <string name="item_not_found">Artikel nicht gefunden</string>
+    <string name="notify_logout_success">Erfolgreiche Abmeldung</string>
+    <string name="notify_asset_update_success">Asset erfolgreich aktualisiert!</string>
+    <string name="notify_asset_update_fail">Ein Fehler ist aufgetreten! Aktualisierung fehlgeschlagen!</string>
+    <string name="notify_details_asset_name">Asset-Name ist erforderlich !</string>
+    <string name="notify_file_created_success">File created successfully</string>
+    <string name="notify_barcode_reader_not_initialized">Barcode Reader not initialized</string>
+    <string name="notify_file_creation_error">File created unsuccessfully</string>
+    <string name="notify_file_not_found">File not found</string>
+    <string name="notify_file_read_error">File read error</string>
+
+    <!-- DIALOGS -->
+    <string name="dialog_yes_btn">Ja</string>
+    <string name="dialog_no_btn">Nein</string>
+    <string name="dialog_new_session_title">Bestätigung</string>
+    <string name="dialog_new_session_message">Mit dieser Aktion verlierst du deinen letzten Fortschritt.\nMöchtest du fortfahren?</string>
+    <string name="dialog_exit_title">Exit Bestätigung</string>
+    <string name="dialog_exit_message">Sind Sie sicher, dass Sie aufhören wollen?\nSie können jederzeit zurückkommen und die begonnene Arbeit fortsetzen!</string>
+    <string name="dialog_export_title">Exportbestätigung</string>
+    <string name="dialog_export_message">Diese Aktion schließt die begonnene Arbeit ab und erstellt die endgültige Ausgabedatei.</string>
+    <string name="dialog_export_text">Die Arbeiten sind im Gange</string>
+    <string name="dialog_loading_text">Geladen</string>
+    <string name="dialog_loading_text2">Daten werden geladen</string>
+    <string name="dialog_export_done">Erfolg exportieren!</string>
+    <string name="dialog_room_not_found">Kein Zimmer gefunden !</string>
+    <string name="dialog_move_title">Bewegen</string>
+    <string name="dialog_move_message">Der Vorgang war erfolgreich, das Gerät befindet sich jedoch derzeit in einem anderen Raum.\nMöchten Sie es in diesen Raum verlegen?</string>
+    <string name="dialog_check_update">Auf Update überprüfen&#8230;</string>
+    <string name="dialog_update_available">Update verfügbar:&#160;</string>
+    <string name="dialog_update_yesBtn">Aktualisieren</string>
+    <string name="dialog_update_noBtn">Später</string>
+    <string name="dialog_asset_move_title">Vermögensverschiebung</string>
+    <string name="dialog_asset_move_message">Dieser Artikel befindet sich derzeit in einem anderen Raum.\nMöchten Sie es in diesen Raum verschieben?</string>
+    <string name="dialog_not_in_room">Betreten Sie einen Raum oder gehen Sie zu den raumlosen Gegenständen</string>
+    <string name="dialog_updating">"Aktualisierung herunterladen…"</string>
+
+    <!-- BUTTONS -->
+    <string name="details">Einzelheiten</string>
+    <string name="show_found">Gefunden anzeigen</string>
+    <string name="show_open">Show Open</string>
+    <string name="login_button">Anmeldung</string>
+    <string name="logout_btn">Abmeldung</string>
+    <string name="new_button">Neu</string>
+    <string name="back_button">Zurück</string>
+    <string name="alone_items_btn">Alleine Artikel</string>
+    <string name="export_csv_btn">Export</string>
+    <string name="exit">BEENDEN</string>
+    <string name="continue_btn">Fortsetzen</string>
+    <string name="new_session_btn">Neue Sitzung</string>
+    <string name="asset_modify_btn">ändern</string>
+    <string name="asset_create_btn">Erstellen</string>
+    <string name="btn_ok">OK</string>
+    <string name="btn_build_inventory_newroom">Neu Room</string>>
+    <string name="btn_resume_inventory">Fortsetzung der Inventur</string>
+    <string name="btn_new_inventory">Neues Inventar</string>
+    <string name="btn_regular_inventory">Regelmäßiges Inventar</string>
+    <string name="btn_build_inventory">Inventar erstellen</string>
+
+    <!-- LABELS -->
+    <string name="room_number">Zimmernummer</string>
+    <string name="inventory_number">Inventar Nummer</string>
+    <string name="login_username">Benutzername</string>
+    <string name="login_password">Passwort</string>
+    <string name="room_number_error_text">Barcode nicht gefunden</string>
+    <string name="wrong_room_number_barcode">Ungültige Zimmernummer</string>
+    <string name="session_not_found">Keine Sitzung gestartet</string>
+    <string name="session_continue">Sitzung kann fortgesetzt werden\nLetztes Update:&#160;</string>
+    <string name="asset_asset_number">Artikelnummer</string>
+    <string name="asset_asset">Inventar</string>
+    <string name="asset_asset_name">Artikel Name</string>
+    <string name="asset_inventory_number">Inventar Nummer</string>
+    <string name="asset_company_code">Firmencode</string>
+    <string name="asset_cost_center">Kostenstelle</string>
+    <string name="asset_new_cost_center">Neue Kostenstelle</string>
+    <string name="asset_room">Zimmer</string>
+    <string name="asset_new_room">Neues Zimmer</string>
+    <string name="asset_user">Benutzername</string>
+    <string name="asset_date">Daten</string>
+    <string name="new_session_desc">Durch Klicken auf die Schaltfläche geht der laufende Betrieb verloren.</string>
+    <string name="management_all_rooms">Alle Zimmer</string>
+    <string name="management_started_rooms">Gestartetes Zimmer</string>
+    <string name="management_finished_rooms">Fertige Zimmer</string>
+    <string name="management_all_items">Alle Artikel</string>
+    <string name="management_checked_items">Geprüfte Artikel</string>
+    <string name="management_room">Zimmermanagement</string>
+    <string name="management_item">Artikel Management</string>
+    <string name="version">Ausführung</string>
+    <string name="inventory_dialog_attention">AUFMERKSAMKEIT!</string>
+    <string name="inventory_dialog_attention_desc">Es gibt eine begonnene Inventur. Wenn Sie ein neues beginnen, verlieren Sie das laufende.</string>
+    <string name="inventory_dialog_resume_desc">Sitzung fortsetzen.\n Letzte Speicherung:&#160;</string>
+    <string name="inventory_dialog_new_desc">Mit diesem Schritt verlieren Sie die von Ihnen gestartete Sitzung.</string>
+    <string name="menu_choose_inventory">Wählen Sie Ihre Inventarmethode</string>
+    <string name="menu_regular_inventory_desc">Wählen Sie diese Option, wenn Sie bereits eine Bestandsliste importieren möchten.</string>
+    <string name="menu_build_inventory_desc">Baubeschreibung &#8230;</string>
+
+    <!-- INFO LOGS -->
+    <string name="test_string">Failed to apply properties</string>
+    <string name="test_string2">Use system scanning setting</string>
+    <string name="test_string3">Fail import scanner settings</string>
+    <string name="test_string4">Scanner is not claimed</string>
+    <string name="test_string5">Scanner unavailable</string>
+
+    <!-- OTHERS -->
+    <string name="successGif"> </string>
+    <string name="text_holder"> </string>
+
+</resources>

@@ -1,0 +1,89 @@
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/LoginFragment">
+
+    <fragment
+        android:id="@+id/LoginFragment"
+        android:name="com.devforce.inventory.fragments.LoginFragment"
+        android:label="Login Fragment"
+        android:tag="LoginFragment"
+        tools:layout="@layout/fragment_login">
+
+        <action
+            android:id="@+id/action_Login_To_MenuSelect"
+            app:destination="@+id/MenuFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/MenuFragment"
+        android:name="com.devforce.inventory.fragments.MenuFragment"
+        android:label="Menu Fragment"
+        tools:layout="@layout/fragment_menu">
+
+        <action
+            android:id="@+id/action_MenuFragment_To_RoomConfirmationFragment"
+            app:destination="@+id/RoomConfirmationFragment" />
+
+        <action
+            android:id="@+id/action_MenuFragment_To_BuildInventoryFragment"
+            app:destination="@+id/BuildInventoryFragment" />
+
+        <action
+            android:id="@+id/action_FROM_MenuSelect_To_LoginFragment"
+            app:destination="@+id/LoginFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/RoomConfirmationFragment"
+        android:name="com.devforce.inventory.fragments.RoomConfirmationFragment"
+        android:label="Room Confirmation"
+        tools:layout="@layout/fragment_roomconfirmation">
+
+        <action
+            android:id="@+id/action_RoomConfirmation_to_ItemDetails"
+            app:destination="@id/ItemDetails" />
+        <action
+            android:id="@+id/action_FROM_RoomConfirmation_to_MenuFragment"
+            app:destination="@id/MenuFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/BuildInventoryFragment"
+        android:name="com.devforce.inventory.fragments.BuildInventoryFragment"
+        android:label="Build Inventory"
+        tools:layout="@layout/fragment_build_roomconfirmation">
+
+        <action
+            android:id="@+id/action_BuildInventoryFragment_to_MenuFragment"
+            app:destination="@id/MenuFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/ItemDetails"
+        android:name="com.devforce.inventory.fragments.ItemDetailsFragment"
+        android:label="Item Details"
+        tools:layout="@layout/fragment_item_details">
+
+        <action
+            android:id="@+id/action_ItemDetailsFragment_to_ChangeItemFragment"
+            app:destination="@id/ChangeItem" />
+
+        <action
+            android:id="@+id/action_FROM_ItemDetailsFragment_to_RoomConfirmationFragment"
+            app:destination="@id/RoomConfirmationFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/ChangeItem"
+        android:name="com.devforce.inventory.fragments.ChangeItemFragment"
+        android:label="Change Item"
+        tools:layout="@layout/fragment_changeitem">
+
+        <action
+            android:id="@+id/action_FROM_ChangeItem_to_ItemDetailsFragment"
+            app:destination="@id/ItemDetails" />
+    </fragment>
+
+</navigation>

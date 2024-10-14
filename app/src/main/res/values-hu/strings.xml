@@ -1,0 +1,120 @@
+<resources>
+
+    <!-- APPLICATION -->
+    <string name="app_name">Inventory of Assets</string>
+
+    <!-- NOTIFIES -->
+    <string name="notify_login_success">Belépés sikeres</string>
+    <string name="notify_login_failed">Belépés sikertelen</string>
+    <string name="notify_need_room_number">Be kell olvasnod egy szoba vonalkódját</string>
+    <string name="file_open_success">Fájl sikeresen megnyitva</string>
+    <string name="file_open_error">Csak CSV fájl nyitható meg</string>
+    <string name="item_checked_success">Elem sikeresen beolvasva</string>
+    <string name="item_already_checked">Ezt az elemet már beolvastad</string>
+    <string name="item_not_found">Elem nem található!</string>
+    <string name="notify_logout_success">Kijelentkezés sikeres</string>
+    <string name="notify_asset_update_success">Az adatok sikeresen módosítva!</string>
+    <string name="notify_asset_update_fail">Hiba történt! Módosítás sikertelen!</string>
+    <string name="notify_details_asset_name">Az eszköz nevének megadása kötelező !</string>
+    <string name="notify_file_created_success">File created successfully</string>
+    <string name="notify_barcode_reader_not_initialized">Barcode Reader not initialized</string>
+    <string name="notify_file_creation_error">File created unsuccessfully</string>
+    <string name="notify_file_not_found">File not found</string>
+    <string name="notify_file_read_error">File read error</string>
+
+    <!-- DIALOGS -->
+    <string name="dialog_yes_btn">Igen</string>
+    <string name="dialog_no_btn">Nem</string>
+    <string name="dialog_new_session_title">Megerősítés</string>
+    <string name="dialog_new_session_message">Ezzel a művelettel a megkezdett munkameneted elvész.\nBiztosan folytatod?</string>
+    <string name="dialog_exit_title">Kilépés megerősítése</string>
+    <string name="dialog_exit_message">Biztosan kilépsz?\nBármikor visszatérhetsz és folytathatod a megkezdett munkát!</string>
+    <string name="dialog_export_title">Export megerősítése</string>
+    <string name="dialog_export_message">Ez a művelet lezárja a megkezdett munkát, és létrehozza a végső kimeneti fájlt.</string>
+    <string name="dialog_export_text">A művelet folyamatban</string>
+    <string name="dialog_loading_text">Töltés</string>
+    <string name="dialog_loading_text2">Adatok betöltése</string>
+    <string name="dialog_export_done">Fájl mentése sikeres!</string>
+    <string name="dialog_room_not_found">Szoba nem található!</string>
+    <string name="dialog_move_title">Elem áthelyezése</string>
+    <string name="dialog_move_message">A művelet sikeres volt, de az elem jelenleg egy másik szobában van.\nSzeretnéd áthelyezni ebbe a szobába?</string>
+    <string name="dialog_check_update">Frissítés keresése&#8230;</string>
+    <string name="dialog_update_available">Frissítés elérhető:&#160;</string>
+    <string name="dialog_update_yesBtn">Frissítés</string>
+    <string name="dialog_update_noBtn">Később</string>
+    <string name="dialog_asset_move_title">Elem mozgatása</string>
+    <string name="dialog_asset_move_message">Ez az elem jelenleg másik szobában van.\nSzeretnéd ebbe a szobába áthelyezni?</string>
+    <string name="dialog_not_in_room">Lépj be egy szobába vagy a szoba nélküli tárgyakhoz</string>
+    <string name="dialog_updating">"Frissítés letöltése…"</string>
+
+    <!-- BUTTONS -->
+    <string name="details">Részletek</string>
+    <string name="show_found">Mutasd a találtakat</string>
+    <string name="show_open">Mutasd a nyitottakat</string>
+    <string name="login_button">Belépés</string>
+    <string name="logout_btn">Kijelentkezés</string>
+    <string name="new_button">Új</string>
+    <string name="back_button">Vissza</string>
+    <string name="alone_items_btn">Szoba nélküli elemek</string>
+    <string name="export_csv_btn">Export</string>
+    <string name="exit">Kilépés</string>
+    <string name="continue_btn">Leltár folytatása</string>
+    <string name="new_session_btn">Új munkamenet</string>
+    <string name="asset_modify_btn">Módosítás</string>
+    <string name="asset_create_btn">Létrehozás</string>
+    <string name="btn_ok">OK</string>
+    <string name="btn_build_inventory_newroom">Új Szoba</string>>
+    <string name="btn_resume_inventory">Leltár folytatása</string>
+    <string name="btn_new_inventory">Új leltár</string>
+    <string name="btn_regular_inventory">Normál leltár</string>
+    <string name="btn_build_inventory">Építs leltárat</string>
+
+    <!-- LABELS -->
+    <string name="room_number">Szoba vonalkódja</string>
+    <string name="inventory_number">Tárgy vonalkódja</string>
+    <string name="login_username">Felhasználónév</string>
+    <string name="login_password">Jelszó</string>
+    <string name="room_number_error_text">Vonalkód nem található</string>
+    <string name="wrong_room_number_barcode">Érvénytelen vonalkód</string>
+    <string name="session_not_found">Nincs megkezdett munkamenet</string>
+    <string name="session_continue">Munkamenet folytatható.\n Utolsó frissítés:&#160;</string>
+    <string name="asset_asset_number">Azonosítószám</string>
+    <string name="asset_asset">Eszköz</string>
+    <string name="asset_asset_name">Eszköz neve</string>
+    <string name="asset_inventory_number">Tárgy vonalkód</string>
+    <string name="asset_company_code">Cég kód</string>
+    <string name="asset_cost_center">Költséghely</string>
+    <string name="asset_new_cost_center">Új költséghely</string>
+    <string name="asset_room">Szoba</string>
+    <string name="asset_new_room">Új szoba</string>
+    <string name="asset_user">Felhasználó</string>
+    <string name="asset_date">Dátum</string>
+    <string name="new_session_desc">A gombra kattintva a folyamatban lévő művelet elvész.</string>
+    <string name="management_all_rooms">Összes szoba</string>
+    <string name="management_started_rooms">Megkezdett szobák</string>
+    <string name="management_finished_rooms">Befejezett szobák</string>
+    <string name="management_all_items">Összes eszköz</string>
+    <string name="management_checked_items">Ellenőrzött eszközök</string>
+    <string name="management_room">Szobakezelés</string>
+    <string name="management_item">Eszközkezelés</string>
+    <string name="version">Verzió</string>
+    <string name="inventory_dialog_attention">FIGYELEM!</string>
+    <string name="inventory_dialog_attention_desc">Van egy megkezdett leltár. Ha újat kezdesz, a folyamatban lévőt elveszíted.</string>
+    <string name="inventory_dialog_resume_desc">Munkamenet folytatása.\n Utolsó mentés:&#160;</string>
+    <string name="inventory_dialog_new_desc">Ezzel a lépéssel elveszíted a megkezdett munkamenetet.</string>
+    <string name="menu_choose_inventory">Válaszd ki a leltár típusát</string>
+    <string name="menu_regular_inventory_desc">Válaszd ezt, ha van előre elkészített adatbázisod, amit be szeretnél importálni.</string>
+    <string name="menu_build_inventory_desc">Építkezési bemutató röviden !! &#8230;</string>
+
+    <!-- INFO LOGS -->
+    <string name="test_string">Failed to apply properties</string>
+    <string name="test_string2">Use system scanning setting</string>
+    <string name="test_string3">Fail import scanner settings</string>
+    <string name="test_string4">Scanner is not claimed</string>
+    <string name="test_string5">Scanner unavailable</string>
+
+    <!-- OTHERS -->
+    <string name="successGif"> </string>
+    <string name="text_holder"> </string>
+
+</resources>
